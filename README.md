@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <h1 align="center"> LANDING PAGE </h1>
 
 <p align="center">
@@ -45,3 +46,6 @@ Esse projeto está sob a licença MIT.
 ---
 
 Feito com estudos via Rocketseat :wave: [Participe da nossa comunidade!](https://discord.gg/rocketseat)
+=======
+
+>>>>>>> 38a1057c086e7e094916048003dcb4aa615a36cf
