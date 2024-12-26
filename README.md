@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 <h1 align="center"> LANDING PAGE </h1>
 
 <p align="center">
