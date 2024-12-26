@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 <h1 align="center"> LANDING PAGE </h1>
 
 <p align="center">
@@ -37,7 +36,7 @@ Uma pagina para facilitar o acesso á projetos ou redes sociais.
 
 ## 🔖 Layout
 
-Você pode visualizar o layout do projeto através [DESSE LINK](https://www.figma.com/design/ARyNwCvsWABG1ribDyDXxu/DevLinks-%E2%80%A2-Projeto-Discover-(Community)?node-id=1439-736&t=E9dR4BWwppaUtP2l-1). É necessário ter conta no [Figma](https://figma.com) para acessá-lo.
+Você pode visualizar o layout do projeto através [DESSE LINK](<https://www.figma.com/design/ARyNwCvsWABG1ribDyDXxu/DevLinks-%E2%80%A2-Projeto-Discover-(Community)?node-id=1439-736&t=E9dR4BWwppaUtP2l-1>). É necessário ter conta no [Figma](https://figma.com) para acessá-lo.
 
 ## :memo: Licença
 
@@ -45,7 +44,4 @@ Esse projeto está sob a licença MIT.
 
 ---
 
-Feito com estudos via Rocketseat :wave: [Participe da nossa comunidade!](https://discord.gg/rocketseat)
-=======
-
->>>>>>> 38a1057c086e7e094916048003dcb4aa615a36cf
+# Feito com estudos via Rocketseat :wave: [Participe da nossa comunidade!](https://discord.gg/rocketseat)
