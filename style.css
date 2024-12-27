@@ -73,7 +73,7 @@ body * {
   transform: translateY(-50%);
 
   animation: retorno 0.2s;
-  transition: outline 0.3s ease;
+  transition: outline 0.3s ease, transform 0.3s ease;
 }
 .light #switch button {
   animation: fluedez 0.2s forwards;
@@ -81,6 +81,7 @@ body * {
 
 #switch button:hover {
   outline: 8px solid var(--highlight-color);
+  border-radius: 50%;
 }
 
 #switch span {
