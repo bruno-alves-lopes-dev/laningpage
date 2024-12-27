@@ -24,7 +24,8 @@
 }
 
 body {
-  background: var(--bg-url) no-repeat top center / cover; /* Corrigido espaço entre propriedades */
+  background: var(--bg-url) no-repeat top center / cover;
+  height: 100vh;
 }
 body * {
   font-family: "Inter", sans-serif;
@@ -211,4 +212,14 @@ h1 {
 
 p {
   font-size: 1.5em;
+}
+
+/* media queries */
+@media (min-width: 700px) {
+  :root {
+    --bg-url: url(./assets/bg-mobile.jpg);
+  }
+  .light {
+    --bg-url: url(./assets/bg-mobile-light.jpg);
+  }
 }
