@@ -27,34 +27,3 @@ function createSnowflake() {
 }
 
 setInterval(createSnowflake, 50)
-
-
-
-document.addEventListener("DOMContentLoaded", () => {
-  const lights = document.querySelectorAll(".light")
-
-  // Efeito de luz piscando
-  setInterval(() => {
-    lights.forEach((light) => {
-      light.style.backgroundColor =
-        light.style.backgroundColor === "yellow" ? "red" : "yellow"
-    })
-  }, 1000)
-
-  // Adicionando o efeito de neve
-  const createSnowflake = () => {
-    const snowflake = document.createElement("div")
-    snowflake.classList.add("snowflake")
-    snowflake.textContent = "❄"
-    snowflake.style.left = `${Math.random() * 100}vw`
-    snowflake.style.animationDuration = `${Math.random() * 3 + 2}s`
-    snowflake.style.animationDelay = `${Math.random() * 5}s`
-    document.body.appendChild(snowflake)
-
-    setTimeout(() => {
-      snowflake.remove()
-    }, 5000)
-  }
-
-  setInterval(createSnowflake, 100)
-})
