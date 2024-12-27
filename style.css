@@ -4,10 +4,10 @@
   box-sizing: border-box;
 }
 :root {
-  --text-color: white;
+  --text-color: rgb(6, 20, 95);
   --bg-url: url(./assets/bg-mobile.jpg);
-  --stroke-color: rgba(255, 255, 255, 0.5);
-  --surface-color: rgba(255, 255, 255, 0.05);
+  --stroke-color: rgb(139, 69, 19);
+  --surface-color: rgba(12, 163, 55, 0.184);
   --surface-color-hover: rgba(0, 0, 0, 0.02);
   --highlight-color: rgba(255, 255, 255, 0.3);
   --switch-bg-url: url(./assets/moon-stars.svg);
@@ -15,9 +15,9 @@
 
 .light {
   --text-color: black;
-  --bg-url: url(./assets/bg-mobile-light.jpg);
-  --stroke-color: rgba(0, 0, 0, 0.5);
-  --surface-color: rgba(0, 0, 0, 0.05);
+  --bg-url: url(./assets/bg-mobile-light.jpg); /* imagem mobile */
+  --stroke-color: rgb(139, 69, 19);
+  --surface-color: rgba(12, 163, 55, 0.184);
   --surface-color-hover: rgba(0, 0, 0, 0.02);
   --highlight-color: rgba(0, 0, 0, 0.3);
   --switch-bg-url: url(./assets/sun.svg);
@@ -28,7 +28,7 @@ body {
   height: 100vh;
 }
 body * {
-  font-family: "Inter", sans-serif;
+  font-family: "Press Start 2P", cursive;
   color: var(--text-color);
 }
 
@@ -59,10 +59,11 @@ body * {
 
   margin: 4px auto;
 }
+
 #switch button {
   width: 32px;
   height: 32px;
-  background: white var(--switch-bg-url) no-repeat center;
+  background: rgb(255, 255, 255) var(--switch-bg-url) no-repeat center;
   border: 0;
   border-radius: 50%;
 
@@ -80,7 +81,7 @@ body * {
 }
 
 #switch button:hover {
-  outline: 8px solid var(--highlight-color);
+  outline: 12px solid var(--highlight-color);
   border-radius: 50%;
 }
 
@@ -90,7 +91,7 @@ body * {
   height: 24px;
 
   background: var(--surface-color);
-  backdrop-filter: blur(4px);
+  backdrop-filter: blur(1px);
   -webkit-backdrop-filter: blur(4px);
 
   border: 1px solid var(--stroke-color);
@@ -102,7 +103,7 @@ ul {
   list-style: none;
   display: flex;
   flex-direction: column;
-  gap: 16px;
+  gap: 24px;
   padding: 24px 0;
 }
 
@@ -110,24 +111,52 @@ ul li a {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 16px 24px;
+  padding: 12px 34px;
   background: var(--surface-color);
   border: 1px solid var(--stroke-color);
-  border-radius: 8px;
-
-  backdrop-filter: blur(4px);
-  -webkit-backdrop-filter: blur(4px);
+  border-radius: 10px;
+  box-shadow: 0 4px 1px rgba(92, 71, 71, 0.809);
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
 
   text-decoration: none;
-  font-weight: bold;
+  font-family: "Press Start 2P", cursive;
 
-  transition: background 0.2s;
+  transition: background 0.2s, transform 0.2s ease;
+
+  color: var(--text-color);
+
+  outline: none;
 }
 
-/* Pseudo-seletores */
 ul li a:hover {
-  background: var(--surface-color-hover);
-  border: 1.5px solid var(--text-color);
+  transform: translateY(-4px);
+  border: 1px solid #555;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+}
+
+ul li a:focus {
+  outline: none;
+  border: 2px solid var(--highlight-color);
+  box-shadow: 0 0 8px var(--highlight-color);
+}
+
+ul li a:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: var(--highlight-color);
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 0.3s ease;
+}
+ul li a:hover::after {
+  transform: scaleX(1);
+  transform-origin: left;
 }
 
 /* Social links */
@@ -142,14 +171,14 @@ ul li a:hover {
   align-items: center;
   justify-content: center;
   padding: 16px;
-  font-size: 24px;
-  transition: transform 0.3s ease, background 0.3s ease;
+  font-size: 34px;
+  border-radius: 50%;
+  transition: transform 0.3s ease, background 0.3s ease, border-radius 0.3s ease;
 }
 
 #social-links a:hover {
-  border-radius: 50%;
   background: var(--highlight-color);
-  transform: scale(1.2);
+  transform: scale(0.6);
 }
 
 body,
@@ -184,7 +213,7 @@ ul li a:focus {
 html,
 body {
   height: 100%;
-  font-family: "Inter", sans-serif;
+  font-family: "Press Start 2P", cursive;
 }
 
 .background-video {
@@ -222,10 +251,10 @@ p {
 /* media queries */
 @media (min-width: 700px) {
   :root {
-    --bg-url: url(./assets/bg-desktop.jpg); /* Troque para imagem desktop */
+    --bg-url: url(./assets/bg-desktop.jpg); /*  imagem desktop */
   }
   .light {
-    --bg-url: url(./assets/bg-desktop-light.jpg); /* Troque para imagem light desktop */
+    --bg-url: url(./assets/bg-desktop-light.jpg); /* imagem light desktop */
   }
 }
 
@@ -246,3 +275,47 @@ p {
     left: 0%;
   }
 }
+
+
+
+
+.rubik-vinyl-regular {
+  font-family: "Rubik Vinyl", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+/* Neve no background */
+
+body {
+  background-color: #282c34;
+  overflow: hidden;
+  height: 100vh;
+  margin: 0;
+}
+
+.snowflake {
+  position: absolute;
+  top: -10px;
+  color: white;
+  font-size: 15px; /* Tamanho da neve */
+  opacity: 0.7;
+  pointer-events: none;
+  animation: fall linear infinite;
+  z-index: 9999;
+}
+
+.covered {
+  position: relative;
+  background: rgba(255, 255, 255, 0.5); /* Neve cobrindo o elemento */
+  border-radius: 5px;
+}
+
+@keyframes fall {
+  to {
+    transform: translateY(100vh); /* Faz os flocos caírem até o final da tela */
+  }
+}
+
+
