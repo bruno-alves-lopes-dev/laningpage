@@ -15,7 +15,7 @@ function createSnowflake() {
 
   snowflake.style.animationDelay = `${Math.random() * 5}s`
 
-  snowflake.textContent = "*" //
+  snowflake.textContent = "❅" 
 
   snowflake.style.fontSize = `${Math.random() * 5 + 10}px`
 
