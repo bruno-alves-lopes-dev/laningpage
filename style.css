@@ -300,7 +300,7 @@ body {
   opacity: 0.7;
   pointer-events: none;
   animation: fall linear infinite;
-  z-index: 9999;
+  z-index: -1;
 }
 
 @keyframes fall {
