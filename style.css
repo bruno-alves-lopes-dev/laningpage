@@ -9,7 +9,7 @@
   --stroke-color: rgba(255, 255, 255, 0.5);
   --surface-color: rgba(255, 255, 255, 0.05);
   --surface-color-hover: rgba(0, 0, 0, 0.02);
-  --highlight-color: rgba(255, 255, 255, 0.02);
+  --highlight-color: rgba(255, 255, 255, 0.3);
   --switch-bg-url: url(./assets/moon-stars.svg);
 }
 
@@ -19,7 +19,7 @@
   --stroke-color: rgba(0, 0, 0, 0.5);
   --surface-color: rgba(0, 0, 0, 0.05);
   --surface-color-hover: rgba(0, 0, 0, 0.02);
-  --highlight-color: rgba(0, 0, 0, 0.01);
+  --highlight-color: rgba(0, 0, 0, 0.3);
   --switch-bg-url: url(./assets/sun.svg);
 }
 
@@ -73,10 +73,10 @@ body * {
   transform: translateY(-50%);
 
   animation: retorno 0.2s;
+  transition: outline 0.3s ease;
 }
 .light #switch button {
   animation: fluedez 0.2s forwards;
-  
 }
 
 #switch button:hover {
@@ -163,18 +163,15 @@ footer {
   text-align: center;
   font-size: 14px;
   color: var(--text-color);
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  margin-top: -35px;
 }
 
 ul li a:focus {
   outline: 2px solid var(--text-color);
   outline-offset: 4px;
-}
-
-footer {
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
-  margin-top: -35px;
 }
 
 * {
@@ -186,7 +183,7 @@ footer {
 html,
 body {
   height: 100%;
-  font-family: Arial, sans-serif;
+  font-family: "Inter", sans-serif;
 }
 
 .background-video {
@@ -224,10 +221,10 @@ p {
 /* media queries */
 @media (min-width: 700px) {
   :root {
-    --bg-url: url(./assets/bg-mobile.jpg);
+    --bg-url: url(./assets/bg-desktop.jpg); /* Troque para imagem desktop */
   }
   .light {
-    --bg-url: url(./assets/bg-mobile-light.jpg);
+    --bg-url: url(./assets/bg-desktop-light.jpg); /* Troque para imagem light desktop */
   }
 }
 
