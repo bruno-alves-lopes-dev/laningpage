@@ -1,4 +1,4 @@
-<h1 align="center"> LANDING PAGE </h1>
+<h1 align="center"> WEB PAGE </h1>
 
 <p align="center">
 Projetinho web, com estudos feitos na Rocketseat.
